@@ -15,9 +15,9 @@ parameter_defaults:
   ## Whether to enable rbd (Ceph) backend for Cinder.
   CinderEnableRbdBackend: false
   ## Cinder Backup backend can be either 'ceph' or 'swift'.
-  CinderBackupBackend: ceph
+  CinderBackupBackend: swift
   ## Whether to enable NFS backend for Cinder.
-  # CinderEnableNfsBackend: false
+  CinderEnableNfsBackend: true
   ## Whether to enable rbd (Ceph) backend for Nova ephemeral storage.
   NovaEnableRbdBackend: false
   ## Glance backend can be either 'rbd' (Ceph), 'swift' or 'file'.
