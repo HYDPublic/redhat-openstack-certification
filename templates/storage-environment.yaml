@@ -15,23 +15,23 @@ parameter_defaults:
   ## Whether to enable rbd (Ceph) backend for Cinder.
   CinderEnableRbdBackend: false
   ## Cinder Backup backend can be either 'ceph' or 'swift'.
-  CinderBackupBackend: swift
+  CinderBackupBackend: ceph
   ## Whether to enable NFS backend for Cinder.
-  CinderEnableNfsBackend: true
+  CinderEnableNfsBackend: false
   ## Whether to enable rbd (Ceph) backend for Nova ephemeral storage.
   NovaEnableRbdBackend: false
   ## Glance backend can be either 'rbd' (Ceph), 'swift' or 'file'.
-  GlanceBackend: file
+  GlanceBackend: 'file'
   ## Gnocchi backend can be either 'rbd' (Ceph), 'swift' or 'file'.
-  GnocchiBackend: file
+  GnocchiBackend: 'file'
 
 
   #### CINDER NFS SETTINGS ####
 
   ## NFS mount options
-  CinderNfsMountOptions: 'rw,sync'
+  #CinderNfsMountOptions: 'rw,sync'
   ## NFS mount point, e.g. '192.168.122.1:/export/cinder'
-  CinderNfsServers: '10.210.8.24:/var/storage/cinder'
+  #CinderNfsServers: '10.210.8.24:/var/storage/cinder'
 
 
   #### GLANCE NFS SETTINGS ####
